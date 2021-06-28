@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+	<div sclass="desktop-header"
+		use="org.adempiere.webui.panel.HeaderPanel" id="header">
+
+		<div height="100%" align="center"
+			sclass="desktop-header-left">
+			<image id="logo" width="80px" />
+		</div>
+
+		<div height="100%" align="center"
+			sclass="desktop-header-center">
+			
+			<toolbarbutton id="menuButton" sclass="navbar-toolbar-button" style="margin-right: 10px;"/>
+			<div sclass="search-bar-container" id="menuLookup" />
+			
+		</div>
+
+		<div height="100%" align="center"
+			apply="org.adempiere.webui.panel.UserPanel"
+			sclass="desktop-header-right">
+			<div>
+
+				<div align="center" id="userPanelLinksContainer" sclass="desktop-header-utilities">
+
+					<toolbarbutton
+						use="org.adempiere.webui.component.ToolBarButton"
+						sclass="navbar-toolbar-button" id="user" />
+
+					<toolbarbutton
+						use="org.adempiere.webui.component.ToolBarButton"
+						sclass="navbar-toolbar-button" id="feedback" />
+
+					<toolbarbutton
+						use="org.adempiere.webui.component.ToolBarButton"
+						sclass="navbar-toolbar-button" id="preference" />
+
+					<toolbarbutton
+						use="org.adempiere.webui.component.ToolBarButton"
+						sclass="navbar-toolbar-button" id="changeRole" />
+
+					<toolbarbutton
+						use="org.adempiere.webui.component.ToolBarButton"
+						sclass="navbar-toolbar-button" id="logout" />
+				</div>
+			</div>
+		</div>
+
+	</div>
+</zk>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+  <div height="100%">
+	<borderlayout id="layout" sclass="desktop-layout">
+		<north sclass="desktop-north" splittable="false" collapsible="false">
+			<include src="~./theme/default/zul/desktop/header.zul" id="northBody"/>
+		</north>
+		<west id="desktop-left-column" sclass="desktop-left-column" collapsible="false" splittable="false"
+			hflex="1">
+			
+		</west>
+		<east id="desktop-right-column" sclass="desktop-right-column" collapsible="false" splittable="false">
+		</east>
+		<center sclass="desktop-center" id="windowArea" >
+		</center>
+	</borderlayout>
+  </div>
+</zk>

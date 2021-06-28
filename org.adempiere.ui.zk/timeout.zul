@@ -1,0 +1,31 @@
+<?page title="iDempiere" contentType="text/html;charset=UTF-8" automaticTimeout="false" ?>
+<zk>
+<script>
+<![CDATA[
+	zk.load("adempiere.local.storage");
+]]>
+</script>
+<script defer="true">
+<![CDATA[		
+	var callback = function(ok, val) {
+		if (ok && !!val)
+		{
+			window.location = val;
+		}
+		else
+		{
+			window.location = "sessiontimeout.zul";
+		}
+	};
+    
+    adempiere.get("zkTimeoutURL", callback);
+]]>	
+</script>
+<zscript>
+<![CDATA[
+	import org.adempiere.webui.theme.ThemeManager;
+	self.setTitle(ThemeManager.getBrowserTitle());
+]]>
+</zscript>
+
+</zk>
