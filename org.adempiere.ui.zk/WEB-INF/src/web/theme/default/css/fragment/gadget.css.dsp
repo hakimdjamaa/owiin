@@ -6,6 +6,10 @@
 	width: 16px;
 }
 
+.z-panel-noheader.z-panel-noframe .z-panelchildren {
+    border-top: 0px solid #CFCFCF;
+}
+
 .z-panel-head {
 	background-image: none; 
 	background-color: #FFFFFF;
@@ -13,8 +17,7 @@
 
 .z-panel {
 	border-radius: 5px;
-	border: 1px solid #d8d8d8;
-	border-bottom-width: 1px;
+	border: 0px solid #d8d8d8;
 }
 
 .z-panel-noborder {
@@ -68,9 +71,8 @@
 }
 
 .dashboard-widget{
-	box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
-    background-color: #fff;
-    border-radius: 2px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
     margin: 10px;
 }
 

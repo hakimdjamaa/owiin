@@ -1,5 +1,11 @@
 <%-- header --%>
 
+iframe {
+
+    width: 100% !important;
+    height: 700px !important;
+}
+
 .desktop-header-left {
 	margin: 0;
 	margin-left: 1px;

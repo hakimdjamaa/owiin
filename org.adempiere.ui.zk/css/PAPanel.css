@@ -1,9 +1,15 @@
 .pa-header {
 	background-color: #B5C6C6;
 }
+
+.content {
+	width: 98% !important;
+    margin: 10px !important;
+}
+
 .pa-content {
-	width: 90%;
-	margin: 20px;
+	width: 98%;
+	margin: 10px;
 	background-color: #FFFFFF;
 }
 .pa-hrefNode {

@@ -226,8 +226,7 @@ public class DashboardController implements EventListener<Event> {
 	        		panel = findPanel(dp.getPA_DashboardContent_ID(), dp.getPA_DashboardPreference_ID());
 	        	} else {
 		        	panel = new Panel();
-		        	Caption caption = new Caption(dc.get_Translation(MDashboardContent.COLUMNNAME_Name));
-		        	panel.appendChild(caption);
+		        	
 		        	panel.setAttribute("PA_DashboardContent_ID", dp.getPA_DashboardContent_ID());
 		        	panel.setAttribute("PA_DashboardPreference_ID", dp.getPA_DashboardPreference_ID());
 		        	panelList.add(panel);
@@ -245,18 +244,23 @@ public class DashboardController implements EventListener<Event> {
 	            	
 	            	if (!ClientInfo.isMobile()) {
 	            		panel.setDroppable("true");
-	            		panel.getCaption().setDraggable("true");	            	
+	            		//panel.getCaption().setDraggable("true");	            	
 	            		panel.addEventListener(Events.ON_DROP, this);
 	            	}
 		        	panel.setBorder("normal");
 		        	
-		        	caption.setSclass("panel-caption");
-		        	
-		        	if(dc.getName().equals("Favourites"))
-		        		caption.setIconSclass("z-icon-star");
-		        	if(dc.getName().equals("Recent Items"))
-		        		caption.setIconSclass("z-icon-clock-o");
-		        	
+		        	if(dc.getName().equals("Favourites")) {
+		        		Caption caption = new Caption(dc.get_Translation(MDashboardContent.COLUMNNAME_Name));
+			        	panel.appendChild(caption);
+			        	caption.setSclass("panel-caption");
+			        	caption.setIconSclass("z-icon-star");
+		        	} else if(dc.getName().equals("Recent Items")){
+		        		Caption caption = new Caption(dc.get_Translation(MDashboardContent.COLUMNNAME_Name));
+			        	panel.appendChild(caption);
+			        	caption.setSclass("panel-caption");
+			        	caption.setIconSclass("z-icon-clock-o");
+		        	} 
+		        				        	
 	        	}
 	        	if (panel != null && panel.getAttribute(PANEL_EMPTY_ATTR) == null)
 	        		dashboardColumnLayout.appendChild(panel);
