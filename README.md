@@ -1,17 +1,33 @@
-# iDempiere. Community Powered Enterprise
 
-iDempiere Business Suite ERP/CRM/SCM done the community way.  Focus is on the Community that includes Subject Matter Specialists, Implementors and End-Users.
+<p align="center"><a href="https://github.com/nastyox/Rando.js#nastyox"><img src="https://www.owiin.com/assets/img/brand/dark-logo.svg" height="60"/></a></p>
 
-Please visit the project front page containing links for most of our resources: https://www.idempiere.org/
+<br/>
+<br/>
 
-You can have a first-hand experience about the software in one of our live cloud test sites: https://www.idempiere.org/test-sites
+![Impact Design System Thumbnail](https://www.owiin.com/assets/img/illustrations/illustration.gif)
 
-If you want to install it by yourself, the most used way is to follow the guide: https://wiki.idempiere.org/en/Installing_iDempiere
+# [Free & Open Source EAM](https://www.owiin.com/index.html) 
 
-In case of doubts please use our support forums at http://groups.google.com/group/idempiere  
-Or our Mattermost support channel in https://mattermost.idempiere.org/  
-Don't forget to check our [code of conduct](CODE_OF_CONDUCT.md) and our [contribution guide](CONTRIBUTING.md)
 
-If you find a bug or want to register a feature request please consider discussing it first in our forums, and after you're totally sure, please use the JIRA ticketing system: https://idempiere.atlassian.net
+ ![version](https://img.shields.io/badge/version-0.9.1-blue.svg) ![license](https://img.shields.io/badge/license-AGPL-green.svg) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)
 
-Continuous integration when changing this repository is managed with Jenkins at http://ci.idempiere.org/
+
+Owiin is a EAM program project (Enterprise Asset Management) derived from specific and extensive experience in the field, following the rules and best practice.
+
+Owiin is at the same time a ready-to-use standard product, and a solution that can be custom-configured through provided mechanisms that allow to work on every system element (data models, workflows, reports, dashboards, connectors, etc.).
+
+Owiin is based on the iDempiere Business Suite from which it inherits the basic functionalities and the configuration mechanisms.
+
+Please visit the project front page containing links for most of our resources: https://www.owiin.com/
+
+You can have a first-hand experience about the software in one of our live cloud test site: https://www.owiin.com/test
+
+LICENSE
+=======
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License version 3 as published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License along with this program.
+If not, see <http://www.gnu.org/licenses/agpl.html>.
