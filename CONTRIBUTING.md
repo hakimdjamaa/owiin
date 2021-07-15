@@ -1,111 +1,60 @@
-# Contributing to iDempiere
+# Contributing to Owiin project
 
-First off, thanks for taking the time to contribute! +1
+A big welcome and thank you for considering contributing to Owiin EAM open source project! It’s people like you that make it a reality for users in our community.
 
-We need volunteer developers to help this project come to fruition.
+Reading and following these guidelines will help us make the contribution process easy and effective for everyone involved. It also communicates that you agree to respect the time of the developers managing and developing these open source projects. In return, we will reciprocate that respect by addressing your issue, assessing changes, and helping you finalize your pull requests.
 
-If you haven't already, come find us in [Mattermost](https://mattermost.idempiere.org/). We want you working on things you're excited about.
+## Quicklinks
 
-The following is a set of guidelines for contributing to iDempiere. These are mostly guidelines, not rules. 
-Use your best judgment, and feel free to propose changes to this document in a pull request.
+- [Contributing to Owiin project](#contributing-to-owiin-project)
+  - [Quicklinks](#quicklinks)
+  - [Code of Conduct](#code-of-conduct)
+  - [Getting Started](#getting-started)
+    - [Issues](#issues)
+    - [Pull Requests](#pull-requests)
+  - [Getting Help](#getting-help)
 
-Before starting, make sure that you read our [code of conduct](CODE_OF_CONDUCT.md).This project and everyone participating in 
-it is governed by the iDempiere's Code of Conduct. By participating, you are expected to uphold this code. 
-Please report unacceptable behavior.
+## Code of Conduct
 
-Here are some important resources:
+We take our open source community seriously and hold ourselves and other contributors to high standards of communication. By participating and contributing to this project, you agree to uphold our [Code of Conduct](https://github.com/owiin/owiin/blob/main/CODE_OF_CONDUCT.md).
 
-  * [Test sites](https://www.idempiere.org/test-sites) lets you try iDempiere without installing it,
-  * Bugs, feature requests and improvements? Use the [ticketing system for iDempiere](https://idempiere.atlassian.net/secure/Dashboard.jspa) - our JIRA system (for support please use our [forums](https://www.idempiere.org/forums))
-  * Mattermost: [Support channel](https://mattermost.idempiere.org/idempiere/channels/support). We're usually there during business hours.
-  
-## How Can I Contribute?
+## Getting Started
 
-### **Did you find a bug?**
-* **Do not open up a JIRA ticket if the bug is a security vulnerability in iDempiere**, 
-and instead refer to our [security policy](https://wiki.idempiere.org/en/How_to_report_a_vulnerability) page.
-* **Ensure the bug was not already reported** by searching on JIRA under [Issues](https://idempiere.atlassian.net/issues/).
-**Note:** If you find a **Closed** issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one.
-* If you're unable to find an open issue addressing the problem, open a new one. Be sure to include a 
-**title and clear description**, as much relevant information as possible, and a **code sample** or an **executable test case** 
-demonstrating the expected behavior that is not occurring, it is a good idea if you can reproduce the bug in one of the 
-[test servers](https://www.idempiere.org/test-sites) before you create a ticket.
+Contributions are made to this repo via Issues and Pull Requests (PRs). A few general guidelines that cover both:
 
-#### Before Submitting A Bug Report
+- To report security vulnerabilities, please use our [Responsible Disclosure Program](https://www.owiin.com/responsible-disclosure-policy) which is monitored by our security team.
+- Search for existing Issues and PRs before creating your own.
+- We work hard to makes sure issues are handled in a timely manner but, depending on the impact, it could take a while to investigate the root cause. A friendly ping in the comment thread to the submitter or a contributor can help draw attention if your issue is blocking.
+- If you've never contributed before, see [the first timer's guide on our blog](https://www.owiin.com/blog/a-first-timers-guide-to-an-open-source-project/) for resources and tips on how to get started.
 
-* **Check if you can reproduce the problem in the latest version of iDempiere. 
-* **Check the [FAQs on the forum](https://www.idempiere.org/forums)** for a list of common questions and problems.
+### Issues
 
-#### How Do I Submit A (Good) Bug Report?
+Issues should be used to report problems with the library, request a new feature, or to discuss potential changes before a PR is created. When you create a new Issue, a template will be loaded that will guide you through collecting and providing the information we need to investigate.
 
-Bugs are tracked as [JIRA issues](https://idempiere.atlassian.net/issues/).
+If you find an Issue that addresses the problem you're having, please add your own reproduction information to the existing issue rather than creating a new one. Adding a [reaction](https://www.owiin.com/blog/add-reactions-to-pull-requests-issues-and-comments/) can also help be indicating to our maintainers that a particular problem is affecting more than just the reporter.
 
-Explain the problem and include additional details to help maintainers reproduce the problem:
+### Pull Requests
 
-* **Use a clear and descriptive title** for the issue to identify the problem.
-* **Describe the exact steps which reproduce the problem** in as many details as possible. 
-* **Provide specific examples to demonstrate the steps**. If possible reproduce the problem with Garden data.
-* **Describe the behavior you observed after following the steps** and point out what exactly is the problem with that behavior.
-* **Explain which behavior you expected to see instead and why.**
-* **Include screenshots and videos** - if possible, which show you following the described steps and clearly demonstrate the problem. 
-* **If you're reporting that iDempiere crashed**, include a crash report with a stack trace from the log files. 
-* **If the problem is related to performance or memory**, include valid numbers.
-* **If the problem wasn't triggered by a specific action**, describe what you were doing before the problem happened and share more information using the guidelines below.
+PRs to our libraries are always welcome and can be a quick way to get your fix or improvement slated for the next release. In general, PRs should:
 
-Provide more context by answering these questions:
+- Only fix/add the functionality in question **OR** address wide-spread whitespace/style issues, not both.
+- Add unit or integration tests for fixed or changed functionality (if a test suite already exists).
+- Address a single concern in the least number of changed lines as possible.
+- Include documentation in the repo or on our [docs site](https://www.owiin.com/docs).
+- Be accompanied by a complete Pull Request template (loaded automatically when a PR is created).
 
-* **Can you reproduce the problem in [the test sites](https://www.idempiere.org/test-sites)?**
-* **Did the problem start happening recently** (e.g. after updating to a new version of iDempiere) or was this always a problem?
-* If the problem started happening recently, **can you reproduce the problem in an older version of iDempiere?** What's the most recent version in which the problem doesn't happen?
-* **Can you reliably reproduce the issue?** If not, provide details about how often the problem happens and under which conditions it normally happens.
+For changes that address core functionality or would require breaking changes (e.g. a major release), it's best to open an Issue to discuss your proposal first. This is not required but can save time creating and reviewing changes.
 
-### Suggesting Enhancements
+In general, we follow the ["fork-and-pull" Git workflow](https://github.com/susam/gitpr)
 
-This section guides you through submitting an enhancement suggestion for iDempiere, including completely new features and 
-minor improvements to existing functionality. Following these guidelines helps maintainers and the community understand your 
-suggestion :pencil: and find related suggestions :mag_right:.
+1. Fork the repository to your own Github account
+2. Clone the project to your machine
+3. Create a branch locally with a succinct but descriptive name
+4. Commit changes to the branch
+5. Following any formatting and testing guidelines specific to this repo
+6. Push changes to your fork
+7. Open a PR in our repository and follow the PR template so that we can efficiently review the changes.
 
-Before creating enhancement suggestions, please check [this list](#before-submitting-an-enhancement-suggestion) as you might 
-find out that you don't need to create one. When you are creating an enhancement suggestion, please [include as many details as possible](#how-do-i-submit-a-good-enhancement-suggestion). 
+## Getting Help
 
-#### Before Submitting An Enhancement Suggestion
-
-* Suggest your change in the [public forum](https://www.idempiere.org/forums), do not open an issue on JIRA until you have collected positive feedback about the change. JIRA issues are primarily intended for bug reports and fixes.
-* **Check if there's already [a ticket](https://idempiere.atlassian.net/browse/IDEMPIERE-3978?jql=issuetype%20in%20(Improvement%2C%20%22New%20Feature%22)%20AND%20text%20~%20%22quick%20info%22) which provides or suggests that enhancement.**
-
-#### How Do I Submit A (Good) Enhancement Suggestion?
-
-Enhancement suggestions are tracked as [JIRA issues](https://idempiere.atlassian.net/issues/). 
-
-* **Use a clear and descriptive title** for the issue to identify the suggestion.
-* **Provide a step-by-step description of the suggested enhancement** in as many details as possible.
-* **Provide specific examples to demonstrate the steps**. 
-* **Describe the current behavior** and **explain which behavior you expected to see instead** and why.
-* **Explain why this enhancement would be useful** to most iDempiere users and isn't something that can or should be implemented as a [community plugin](https://wiki.idempiere.org/en/Category:Available_Plugins).
-
-### **Did you write a patch that fixes a bug or adds and enhancement?**
-
-* Attach your patch to the corresponding JIRA ticket or create a pull request and link it to the JIRA ticket.
-* Ensure the PR description clearly describes the problem and solution. Include the relevant issue number if applicable.
-* Before submitting, please read the [Contributing to iDempiere's core](https://wiki.idempiere.org/en/Contributing_to_Trunk) guide to know more about coding conventions, guidelines and benchmarks.
-* If the change is big and adds new functionality, please document the modifications and new features and add this documentation to [the new features wiki](https://wiki.idempiere.org/en/Category:New_Features).
-
-### **Did you write a plugin that is valuable for the community?**
-
-* Read our [Plugin guidelines](https://wiki.idempiere.org/en/Plugin_Guidelines).
-* Add your plugin to the [available plugins site](https://wiki.idempiere.org/en/Category:Available_Plugins).
-**Note:** If the community or its leaders find that your plugin do not follow the guidelines, it's disrupting or needs further support from a specific implementing company to use it. The project leaders are entitled to remove the plugin from the Available plugins list.
-
-### **Do you have questions about the source code?**
-
-* Ask any question about how to use iDempiere in the [public forum](https://www.idempiere.org/forums).
-
-### **Do you want to contribute to the iDempiere documentation?**
-
-* Please read Contributing to iDempiere Documentation.
-
-iDempiere is a community-driven open source project and it is a volunteer effort. We encourage you to pitch in and [join the team](https://github.com/idempiere/idempiere/graphs/contributors)!
-
-Thanks! 
-
-The iDempiere team
+Join us in the [Owiin Community](https://community.owiin.com) and post your question there in the correct category with a descriptive tag.
